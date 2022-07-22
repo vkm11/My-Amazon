@@ -1,5 +1,15 @@
 <ul>
     <li *ngFor="let  product of products" >
-        <a><img src="{{product}}" alt="product-image" /></a>
+        <a>
+            <img src="{{product.imageUrl}}" alt="product-image" />
+            <div class="content">
+                <div class="name">
+                    {{product.name}} ₹-{{product.price}}
+                </div>
+               
+                
+                <span class="favorite{{product.favorite?'':'not'}}"><img src='/assets/heart.png'/></span>
+            </div>
+        </a>
     </li>
 </ul>

@@ -4,5 +4,8 @@ export class products{
     name!:string;
     favorite:boolean = false;
     star:number = 0;
-    tags!:string[];
+    tags?:string[];
+    imageUrl!:string;
+    offerTime!:string;
+    origins!:string;
 }
